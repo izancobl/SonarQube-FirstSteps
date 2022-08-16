@@ -1,0 +1,9 @@
+<div class = "global">
+    <li *ngFor="let number of numbers"> {{number}}</li>
+    <input id = "value" [(ngModel)] = "addedNumber">
+    <div class = "buttons">
+        <button type = "button" (click) = "modify_array()">Modify</button>
+        <button type = "button" (click) = "increase_array()">Increase</button>
+        <button type = "button" (click) = "reset_numbers()">Clear</button>
+    </div>
+</div>
