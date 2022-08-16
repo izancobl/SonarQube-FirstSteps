@@ -1,17 +1,3 @@
-# SonarQube-FirstSteps
-
-This repository is about how to use Sonarqube.
-
-## Table of contents
-
-1. Dockerfile
-2. Config Sonarqube
-3. Explanation of configuration
-4. Solve the issues
-
-## Dockerfile
-
-```dockerfile
 FROM alpine:3.13
 
 ENV JAVA_VERSION="jdk-11.0.11+9" \
@@ -147,47 +133,3 @@ WORKDIR ${SONARQUBE_HOME}
 EXPOSE 9000
 ENTRYPOINT ["bin/run.sh"]
 CMD ["bin/sonar.sh"]
-```
-
-## Run the image from Dockerfile
-
-Run the following command in a terminal in order to get, build and run the necessary dockerfile to deploy Soanrqube.  
-
-```powershell
-docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
-```
-
-## Start Sonarqube installation
-
-To start the installation we whould go to:
-
-```powershell
-http://localhost:9000
-```
-
-In the browser we will see this image the first time.
-
-![Login](./img/Login.PNG)
-
-Log in using the System Administrator credentials:
-
-- **Login:** admin
-- **Password:** admin
-
-After that, you should create your own password in order to remember it well.
-
-Then, the main page will appear:
-![MainPage](./img/MainPage.PNG)
-
-To start the installation we should follow the next instructions:
-
-- Click the Create new project button.
-- Give your project a Project key and a Display name and click the Set Up button.
-- Under Provide a token, select Generate a token. Give your token a name, click the Generate button, and click Continue.
-- Select your project's main language under Run analysis on your project, and follow the instructions to analyze your project. 
-
-## Run the image
-In the third step we are going to run the the docker build image
-
-## Run the image
-In the third step we are going to run the the docker build image
