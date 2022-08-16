@@ -4,12 +4,17 @@ This repository is about how to use Sonarqube.
 
 ## Table of contents
 
-1. Dockerfile
-2. Config Sonarqube
-3. Explanation of configuration
-4. Solve the issues
+1. [Sonarqube with Docker](#sonarqubeWithDocker)
+    1. [Dockerfile](#dockerfile)
+    2. [Run the image](#runImage)
+2. [Sonarqube](#sonarqube)
+    1. [Sonarqube installation](#sqInstallation)
+    2. [Create your first project](#firstProject)
+    3. [Project Configuration](#projectConfiguration)
 
-## Dockerfile
+## Sonarqube with Docker <div id='sonarqubeWithDocker'/>
+
+### Dockerfile <div id='dockerfile'/>
 
 ```dockerfile
 FROM alpine:3.13
@@ -149,7 +154,7 @@ ENTRYPOINT ["bin/run.sh"]
 CMD ["bin/sonar.sh"]
 ```
 
-## Run the image from Dockerfile
+### Run the image from Dockerfile <div id='runImage'/>
 
 Run the following command in a terminal in order to get, build and run the necessary dockerfile to deploy Soanrqube.  
 
@@ -157,7 +162,9 @@ Run the following command in a terminal in order to get, build and run the neces
 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
 ```
 
-## Start Sonarqube installation
+## Sonarqube <div id='sonarqube'/>
+
+### Start Sonarqube installation <div id='sqInstallation'/>
 
 To start the installation we whould go to:
 
@@ -179,9 +186,11 @@ After that, you should create your own password in order to remember it well.
 Then, the main page will appear:
 ![MainPage](./img/MainPage.PNG)
 
-To start the installation we should follow the next instructions:
+### Create your first project <div id='firstProject'/>
 
-- Click the Create new project button.
+In order to create and analyze our first project we must follow the next steps:
+
+- Click the `Create new project` button.
 - Give your project a Project key and a Display name and click the Set Up button.
 - Under Provide a token, select Generate a token. Give your token a name, click the Generate button, and click Continue.
 - Select your project's main language under Run analysis on your project, and follow the instructions to analyze your project. 
