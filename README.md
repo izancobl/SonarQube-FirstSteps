@@ -191,8 +191,17 @@ Then, the main page will appear:
 In order to create and analyze our first project we must follow the next steps:
 > For this tutorial we will use the Heroes Project
 
-- Click the `Manually` button.
-- Give your project a `Display Name` and a `Project Key` and click the `Set Up` button.
-- Select the `Locally` option.
-- Give your token a name, click the `Generate button`, and click `Continue`.
-- We will select our project's main language (`Other`) and we will follow the instructions to analyze our project.
+1. Click the `Manually` button.
+
+2. Give your project a `Display Name` and a `Project Key` and click the `Set Up` button.
+![SecondStep](./img/SecondStep.PNG)
+
+3. Select the `Locally` option.
+![ThirdStep](./img/ThirdStep.PNG)
+
+4. Give your token a name, click the `Generate button`, and click `Continue`.
+![FourthStep](./img/FourthStep.PNG)
+
+5. We will select our project's main language (`Other`) and we will follow the instructions to analyze our project.
+![FifthStep](./img/FifthStep.PNG)
+
