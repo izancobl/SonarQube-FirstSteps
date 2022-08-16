@@ -189,14 +189,10 @@ Then, the main page will appear:
 ### Create your first project <div id='firstProject'/>
 
 In order to create and analyze our first project we must follow the next steps:
+> For this tutorial we will use the Heroes Project
 
-- Click the `Create new project` button.
-- Give your project a Project key and a Display name and click the Set Up button.
-- Under Provide a token, select Generate a token. Give your token a name, click the Generate button, and click Continue.
-- Select your project's main language under Run analysis on your project, and follow the instructions to analyze your project. 
-
-## Run the image
-In the third step we are going to run the the docker build image
-
-## Run the image
-In the third step we are going to run the the docker build image
+- Click the `Manually` button.
+- Give your project a `Display Name` and a `Project Key` and click the `Set Up` button.
+- Select the `Locally` option.
+- Give your token a name, click the `Generate button`, and click `Continue`.
+- We will select our project's main language (`Other`) and we will follow the instructions to analyze our project.
