@@ -166,13 +166,13 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000
 
 ### Start Sonarqube installation <div id='sqInstallation'/>
 
-To start the installation we whould go to:
+To start the installation we should go to:
 
 ```powershell
 http://localhost:9000
 ```
 
-In the browser we will see this image the first time.
+In the browser, we will see this image for the first time.
 
 ![Login](./img/Login.PNG)
 
@@ -202,11 +202,11 @@ In order to create and analyze our first project we must follow the next steps:
 4. Give your token a name, click the `Generate button`, and click `Continue`.
 ![FourthStep](./img/FourthStep.PNG)
 
-5. We will select our project's main language (`Other`) and we will follow the instructions to analyze our project.
+5. We will select our project's main language (`Other`) and follow the instructions to analyze our project.
 ![FifthStep](./img/FifthStep.PNG)
 
-6. When we have complete all the instructions shown in the previous step, we will come back to the browser and we will see this:
+6. When we have completed all the instructions shown in the previous step, we will come back to the browser and we will see this:
 ![SonarqubeAnalysis](./img/SonarqubeAnalysis.PNG)
 
-7. In order to understand what's really about Sonarqube, we propose you to check and resolve all the bugs, code smells and vulnerabilities that appear in our little project.
+7. To understand what's really about Sonarqube, we propose you check and resolve all the bugs, code smells, and vulnerabilities in our little project.
 ![ProjectIssues](./img/ProjectIssues.PNG)
