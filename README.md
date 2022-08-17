@@ -189,7 +189,7 @@ Then, the main page will appear:
 ### Create your first project <div id='firstProject'/>
 
 In order to create and analyze our first project we must follow the next steps:
-> For this tutorial we will use the Heroes Project
+> For this tutorial we will use the angular-sonarqube-test project.
 
 1. Click the `Manually` button.
 
@@ -205,3 +205,8 @@ In order to create and analyze our first project we must follow the next steps:
 5. We will select our project's main language (`Other`) and we will follow the instructions to analyze our project.
 ![FifthStep](./img/FifthStep.PNG)
 
+6. When we have complete all the instructions shown in the previous step, we will come back to the browser and we will see this:
+![SonarqubeAnalysis](./img/SonarqubeAnalysis.PNG)
+
+7. In order to understand what's really about Sonarqube, we propose you to check and resolve all the bugs, code smells and vulnerabilities that appear in our little project.
+![ProjectIssues](./img/ProjectIssues.PNG)
